@@ -1,0 +1,24 @@
+RAPPORT DE SYNTHESE - ATELIER SEABORN IOT
+==========================================
+
+1. TEMPERATURE
+   - Moyenne : 24.88 °C, Médiane : 24.86 °C
+   - Distribution asymétrique (skew = -1.05), traîne vers les valeurs basses
+   - 5 valeurs extrêmes détectées (méthode IQR)
+
+2. BATIMENTS
+   - Médianes proches (B003: 23.05 à B004: 27.54)
+   - B004 nettement plus dispersé (écart-type 5.37 vs ~3 pour les autres)
+   - B004 a les valeurs les plus extrêmes (-18.50 °C à 58.70 °C)
+
+3. ETATS DES CAPTEURS
+   - B004 concentre le plus d'ALERTE (15) et d'ERREUR (2 ex-aequo avec B003)
+   - Capteurs les plus problématiques : C011 (7 anomalies), C010 (6 anomalies), tous deux à B004
+
+4. CORRELATIONS
+   - Seule relation notable : température/consommation (r = 0.32), positive mais modérée
+   - Toutes les autres paires de variables sont quasi indépendantes (r proche de 0)
+   - La corrélation par bâtiment est plus faible que la corrélation globale
+
+5. RECOMMANDATION
+   - Prioriser la maintenance du bâtiment B004, en particulier les capteurs C010 et C011
